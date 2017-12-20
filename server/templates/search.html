@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PluralSight Machine Learning Engineer</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script type="text/javascript">
+   		$(document).ready(function(){
+   		    $("#submit").click(function(e){
+   		        var userhandle = $('#userhandle').val();
+   		        if(!($.isNumeric(userhandle))) {
+   		        	e.preventDefault();
+   		        	alert('Input should be valid number');
+   		        	return false;
+   		        }
+   		        return true;
+   		    });
+   		});
+
+   </script>
+</head>
+<body>
+	<div class="container">
+	<h2>Search for a User </h2> <br/>
+	<form method="POST" action="search_user" name="inputForm" onsubmit="validateInput()">
+		<label>User Handle</label>
+		<input type="text" id="userhandle" class="form-control" name="userhandle" required=""> <br/>
+	<input type="submit" name="search" id="submit" class="btn btn-default" >
+	</form>
+	<br/>
+	<br/>
+	<table class="table">
+		<tr>
+		<th>User Handle</th>
+		<th>Similar Users</th>
+		<th>Similarity Score</th>
+		</tr>
+		<tr>
+		{% for user in userList %}
+			<td>{{user.user_handle}}</td>
+			<td>{{user.similar_user}}</td> 
+			<td>{{user.similarity_score}}}</td>
+		{% endfor %}
+		</tr>
+	</table>
+	</div>
+</body>
+</html>
