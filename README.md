@@ -6,7 +6,7 @@ ___
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [Introduction](#introduction)
-- [Installation] (#Installation)
+- [Installation](#Installation)
 - [Sample Code](#Sample)
 - [Dependencies](#dependencies)
 
