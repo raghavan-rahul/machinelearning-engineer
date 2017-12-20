@@ -92,7 +92,9 @@ def main(input_user_handle):
 	top_thirty_similar_score = np.array2string(top_thirty_similarity_score, separator=',')
 	# insert or update to db
 	user = User()
-	print(user.createNewUser(input_user_handle, top_thirty_similar_users, top_thirty_similar_score));
+	print(top_thirty_similarity_users)
+	print(top_thirty_similarity_score)
+	user.createNewUser(input_user_handle, top_thirty_similar_users, top_thirty_similar_score));
 
 
 
