@@ -8,7 +8,7 @@ ___
 - [Introduction](#introduction)
 - [Installation](#Installation)
 - [Sample Code](#Sample)
-- [Dependencies](#dependencies)
+- [Future Work and Extensions](#futurework)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
