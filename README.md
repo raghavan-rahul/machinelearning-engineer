@@ -1,4 +1,4 @@
-# Plural Sight Machine Learning Engineer 
+# Machine Learning Engineer 
 ___
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
